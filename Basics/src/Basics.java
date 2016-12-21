@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by mvieck on 12/21/16.
  */
@@ -10,6 +12,7 @@ public class Basics {
 
         strArray = new String[]{"First", "Second", "Third"};
         System.out.printf("%s %s %s\n",strArray[0],strArray[1],strArray[2]);
+        System.out.println(Arrays.toString(strArray));
 
         int[] intArray = new int[3];
         intArray[0] = 0;
