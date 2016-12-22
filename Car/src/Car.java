@@ -10,9 +10,15 @@ public class Car {
     int drive;
 
     public Car() {
-        brand = "";
-        speed = 0;
-        drive = 0;
+        this.brand = "";
+        this.speed = 0;
+        this.drive = 0;
+    }
+
+    public Car(String brand, int speed, int drive) {
+        this.brand = brand;
+        this.speed = speed;
+        this.drive = drive;
     }
 
     public static void main(String[] args) {
