@@ -28,15 +28,23 @@ public class Calculator {
         return x * y;
     }
 
-    public static void main(String[] args) {
-        Calculator calculator = new Calculator();
+    public void scanIntegers() {
         System.out.print("Enter in two numbers: ");
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         int y = scanner.nextInt();
-        System.out.println(calculator.add(x,y));
-        System.out.println(calculator.subtract(x,y));
-        System.out.println(calculator.divide(x,y));
-        System.out.println(calculator.multiply(x, y));
+        calculate(x,y);
+    }
+
+    public void calculate(int x, int y) {
+        System.out.println(add(x,y));
+        System.out.println(subtract(x,y));
+        System.out.println(divide(x,y));
+        System.out.println(multiply(x, y));
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        calculator.scanIntegers();
     }
 }
