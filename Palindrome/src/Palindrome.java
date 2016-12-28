@@ -46,6 +46,6 @@ public class Palindrome {
         String school = "school";
         String level = "level";
 
-        System.out.printf("%s=%b, %s=%b, %s=%b",racecar,checkPalindromeForLoop(racecar), school, checkPalindromeForLoop(school), level, checkPalindromeRecursive(level));
+        System.out.printf("%s=%b, %s=%b, %s=%b",racecar,checkPalindromeForLoop(racecar), school, checkPalindromeWhileLoop(school), level, checkPalindromeRecursive(level));
     }
 }
