@@ -13,7 +13,7 @@ public class GuessingGame {
 
     private void welcome() {
         System.out.println("Welcome to the Guessing Game!!!");
-        System.out.println("To begin, enter in a number between 1 and 100.");
+        System.out.println("To begin, guess a number between 1 and 100.");
     }
 
     public void guess() {
@@ -39,11 +39,11 @@ public class GuessingGame {
     }
 
     private void replay(Scanner scanner) {
-        System.out.printf("Play again? Y/N ");
+        System.out.println("Play again? Y/N ");
         String replay = scanner.next();
-        if (replay.matches("Y")) {
+        if (replay.matches("Y") || replay.matches("y")) {
             start();
-        } else if (replay.matches("N")) {
+        } else if (replay.matches("N") || replay.matches("n")) {
             System.out.println("Thanks for playing!");
             return;
         }
